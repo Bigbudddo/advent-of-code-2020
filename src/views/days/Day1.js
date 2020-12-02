@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
+import TextAreaPuzzleInput from '../../components/TextAreaPuzzleInput';
 
 const Day1 = () => {
     const [puzzleInput, setPuzzleInput] = useState('');
-    const [puzzleResult, setPuzzleResult] = useState(0);
+    const [puzzleResult, setPuzzleResult] = useState(null);
 
     const executePartA = () => {
         // reset the puzzle result
-        setPuzzleResult(0);
+        setPuzzleResult(null);
+
+        if (!puzzleInput || puzzleInput.length === 0) {
+            return;
+        }
 
         // split the puzzle input into array of ints
         var aPuzzleInput = puzzleInput.split(/\r?\n/).map(el => parseInt(el));
@@ -34,6 +39,10 @@ const Day1 = () => {
     const executePartB = () => {
         // reset the puzzle result
         setPuzzleResult(0);
+
+        if (!puzzleInput || puzzleInput.length === 0) {
+            return;
+        }
 
         // split the puzzle input into array of ints
         var aPuzzleInput = puzzleInput.split(/\r?\n/).map(el => parseInt(el));
@@ -68,18 +77,16 @@ const Day1 = () => {
     };
 
     return (
-        <section className="section">
-            <div className="container">
-                <textarea className="textarea"
-                    placeholder="Enter your Puzzle Input.."
-                    value={puzzleInput}
-                    onChange={(e) => setPuzzleInput(e.target.value)}>
-                </textarea>
-                <p className="button is-small" onClick={executePartA}>Execute Puzzle A</p>
-                <p className="button is-small" onClick={executePartB}>Execute Puzzle B</p>
-                <pre>{puzzleResult}</pre>
-            </div>
-        </section>
+        <TextAreaPuzzleInput
+            day="1"
+            title="Report Repair"
+            input={puzzleInput}
+            setInput={setPuzzleInput}
+            result={puzzleResult}
+            setResult={setPuzzleResult}
+            executePartA={executePartA}
+            executePartB={executePartB}
+        />
     )
 };
 

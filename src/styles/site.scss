@@ -1,2 +1,79 @@
 @charset "utf-8";
+
+$blue: #0086BB;
+$green: #2CAE66;
+
+$primary: $blue;
+$success: $green;
+
 @import "../../node_modules/bulma/bulma.sass";
+
+main {
+    flex: 1;
+    background-color: #EFF3F4;
+}
+
+pre {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.site-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 3.25rem);
+}
+
+.textarea {
+    min-height: 20em !important;
+}
+
+/* Todo; move this to component styles */
+.calendar-row {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    background-color: #fff;
+}
+
+.calendar-row > .calendar-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.calendar-row > .calendar-item.is-not-active-month {
+    background-color: #e5e5e5;
+}
+
+.calendar-row > .calendar-item:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.calendar-header > .calendar-row {
+    text-align: center;
+}
+
+.calendar-body > .calendar-row  > .calendar-item {
+    position: relative;
+    height: 150px;
+}
+
+.calendar-body > .calendar-row:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-body > .calendar-row > .calendar-item > .calendar-item-date {
+    text-align: right;
+    z-index: 999;
+}
+
+.calendar-body > .calendar-row > .calendar-item > .calendar-item-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
