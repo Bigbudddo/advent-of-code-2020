@@ -1,5 +1,7 @@
 ## Advent of Code 2020 (Solutions)
 
+![Screenshot of Day-3 Completed Calendar]('./public/images/screenshot-day-3-done.png')
+
 *Created by [Eric Wastl](http://was.tl/), [Advent Of Code](https://adventofcode.com/) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.*
 
 My usual attempt at the yearly challenge is to build a C# Console Application and take advantage of my skillset in one of my strongest languages. Over the last year I took upon learning more web-frameworks and deeper in Javascript and things like React. So, to test myself this year - I will be tackling the challenges with a nice UI React Application... Wish me luck!
