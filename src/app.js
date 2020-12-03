@@ -6,6 +6,7 @@ import Home from './views/Home';
 import NotFound from './views/NotFound';
 import Day1 from './views/days/Day1';
 import Day2 from './views/days/Day2';
+import Day3 from './views/days/Day3';
 
 const App = () => {
     return (
@@ -22,6 +23,9 @@ const App = () => {
                         </Route>
                         <Route path='/day2' exact={true}>
                             <Day2 />
+                        </Route>
+                        <Route path='/day3' exact={true}>
+                            <Day3 />
                         </Route>
                         <Route>
                             <NotFound />
