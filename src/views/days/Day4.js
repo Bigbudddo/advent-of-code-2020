@@ -191,7 +191,7 @@ const Day4 = () => {
 
     return (
         <TextAreaPuzzleInput
-            day="3"
+            day="4"
             title="Passport Processing"
             input={puzzleInput}
             setInput={setPuzzleInput}
