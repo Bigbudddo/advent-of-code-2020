@@ -29,7 +29,7 @@ const TextAreaPuzzleInput = ({ day, title, input, setInput, executePartA, execut
                             <button className="button is-primary" onClick={executePartB} disabled={result}>Run Part B</button>
                         </div>
                     </div>
-                    {result && (
+                    {result !== null && !isNaN(result) && (
                         <div className="column is-half">
                             <div className="custom-results">
                                 <p className="has-text-weight-bold">Results:</p>
