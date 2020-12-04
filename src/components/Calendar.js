@@ -26,7 +26,7 @@ const Calendar = ({ month, year, events }) => {
             }
 
             var daysInPreviousMonth = new Date(previousYear, previousMonth, 0).getDate();
-            for (var i = indexOfDayAtStartOfMonth - 1; i > 0; i--) {
+            for (var i = indexOfDayAtStartOfMonth - 1; i >= 0; i--) {
                 calendarArray.push({
                     day: daysInPreviousMonth,
                     month: previousMonth,

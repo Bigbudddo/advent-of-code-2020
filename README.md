@@ -1,6 +1,6 @@
 ## Advent of Code 2020 (Solutions)
 
-![Screenshot of Day-3 Completed Calendar](/public/images/screenshot-day-3-done.png)
+![Screenshot of Day-3 Completed Calendar](/public/images/screenshot-day-4-done.png)
 
 *Created by [Eric Wastl](http://was.tl/), [Advent Of Code](https://adventofcode.com/) is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.*
 
@@ -11,7 +11,7 @@ My usual attempt at the yearly challenge is to build a C# Console Application an
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3
-- [ ] Day 4
+- [x] Day 4
 - [ ] Day 5
 - [ ] Day 6
 - [ ] Day 7
