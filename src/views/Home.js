@@ -13,7 +13,8 @@ const Home = () => {
                     events={[
                         { day: 1, month: 12, year: 2020, link: '/day1', title: 'Day 1' },
                         { day: 2, month: 12, year: 2020, link: '/day2', title: 'Day 2' },
-                        { day: 3, month: 12, year: 2020, link: '/day3', title: 'Day 3' }
+                        { day: 3, month: 12, year: 2020, link: '/day3', title: 'Day 3' },
+                        { day: 4, month: 12, year: 2020, link: '/day4', title: 'Day 4' }
                     ]}
                 />
             </div>
